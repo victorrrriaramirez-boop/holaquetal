@@ -1,0 +1,14 @@
+import PageHero from '@/components/PageHero';
+import { images } from '@/lib/site';
+
+export const metadata = {
+  title: 'Sobre Nosotros',
+  description: 'Conoce el Centro Evangelístico Solamente Cree, a Manuel Ramírez de Arellano y Toñy y su trayectoria ministerial en Madrid.',
+  alternates: { canonical: '/sobre-nosotros' },
+  openGraph: { title: 'Sobre Nosotros | Solamente Cree', description: 'Historia, comunidad y liderazgo del Centro Evangelístico Solamente Cree.', url: '/sobre-nosotros' }
+};
+
+export default function SobreNosotros(){return <><PageHero eyebrow="Nuestra comunidad de fe" title="Sobre Nosotros" text="Centro Evangelístico Solamente Cree, Manuel y Toñy y una trayectoria dedicada al evangelismo, la alabanza y la atención pastoral."/>
+<section className="section"><div className="container split"><div><span className="eyebrow">Quiénes somos</span><h2>Una iglesia evangélica y centro de fe en Madrid</h2><p className="lead">El Centro Evangelístico Solamente Cree nació con el propósito de anunciar el Evangelio de Jesucristo con poder, amor y una vida de fe práctica.</p><p>En nuestras reuniones dominicales en San Blas-Canillejas buscamos una atmósfera de adoración reverente, enseñanza bíblica y comunión fraternal. Creemos en una Iglesia viva, cercana y abierta a las familias y visitantes.</p><blockquote className="quote">«Nada es difícil para Dios» · Lucas 1:37</blockquote></div><img className="feature-image" src={images.community} alt="Comunidad de fe del Centro Evangelístico Solamente Cree en Madrid"/></div></section>
+<section className="section alt"><div className="container split reverse-mobile"><div className="mosaic"><img src={images.worship1} alt="Culto dominical en Madrid"/><img src={images.preaching} alt="Manuel y Toñy predicando"/><img src={images.worship2} alt="Alabanza de Manuel y Toñy"/><img src={images.media} alt="Producción audiovisual del ministerio"/></div><div><span className="eyebrow">Liderazgo & trayectoria apostólica</span><h2>Manuel Ramírez de Arellano y Toñy</h2><p>El Apóstol Manuel Ramírez de Arellano y su esposa Toñy representan una trayectoria de servicio ministerial de varias décadas en España, Europa y América Latina.</p><p>Juntos han desarrollado el ministerio musical «Manuel y Toñy» y «Dejan2huella Producciones». En la actualidad pastorean el Centro Evangelístico Solamente Cree en Madrid.</p><blockquote className="quote">«Nuestra pasión es dejar la huella del amor de Jesús en cada corazón.»</blockquote></div></div></section>
+<section className="section"><div className="container cards three"><article className="card"><h2>Fe</h2><p>Confianza en las promesas bíblicas y en la fidelidad de Dios.</p></article><article className="card"><h2>Comunidad</h2><p>Una congregación con atención pastoral y comunión fraternal.</p></article><article className="card"><h2>Adoración</h2><p>Alabanza, predicación y una vida de fe compartida.</p></article></div></section></>}

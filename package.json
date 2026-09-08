@@ -1,12 +1,16 @@
 {
-  "name": "solamente-cree-production-v2",
-  "private": true,
+  "name": "solamente-cree-production",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "build": "node scripts/build.mjs",
-    "dev": "npx serve public -l 3000"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "devDependencies": {
-    "serve": "^14.2.4"
+  "dependencies": {
+    "next": "15.5.2",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
   }
 }

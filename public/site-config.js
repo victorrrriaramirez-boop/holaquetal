@@ -1,5 +1,0 @@
-window.SITE_CONFIG = {
-  GA_MEASUREMENT_ID: "",
-  GTM_ID: "",
-  CONTACT_ENDPOINT: ""
-};
