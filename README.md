@@ -1,32 +1,20 @@
-# Solamente Cree — web de producción
+# Solamente Cree — GitHub + Vercel
 
-Proyecto Next.js (App Router) reconstruido desde el HTML exportado por Google Stitch.
+Proyecto estático listo para subir a GitHub y desplegar en Vercel.
 
-## Desarrollo
+## Archivos
+- `index.html` — web completa.
+- `vercel.json` — configuración mínima para Vercel.
 
-```bash
-npm install
-npm run dev
-```
+## Subir a GitHub
+Sube los archivos de esta carpeta directamente a la raíz del repositorio.
 
-## Producción
+## Desplegar en Vercel
+1. En Vercel: **Add New → Project**.
+2. Importa el repositorio de GitHub.
+3. Framework Preset: **Other**.
+4. No necesitas Build Command.
+5. No necesitas Output Directory.
+6. Pulsa **Deploy**.
 
-```bash
-npm run build
-npm start
-```
-
-## Variables de entorno
-
-Copia `.env.example` a `.env.local`.
-
-- `NEXT_PUBLIC_SITE_URL`: dominio canónico.
-- `NEXT_PUBLIC_GA_ID`: ID opcional de Google Analytics 4.
-- `NEXT_PUBLIC_GTM_ID`: ID opcional de Google Tag Manager.
-- `CONTACT_WEBHOOK_URL`: webhook opcional para procesar formularios (Make, Zapier, endpoint propio, etc.).
-
-Si `CONTACT_WEBHOOK_URL` no está configurado, el formulario informa al visitante de que debe usar WhatsApp o email; no simula un envío inexistente.
-
-## Assets
-
-El HTML de Stitch solo incluía URLs remotas de Google para las fotografías. Se centralizaron en `lib/site.ts`. Sustitúyelas por archivos locales en `public/images` cuando dispongas de los originales para eliminar también esa dependencia externa.
+Vercel detectará `index.html` en la raíz y publicará la web como sitio estático.
