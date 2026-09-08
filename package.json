@@ -1,10 +1,14 @@
 {
-  "name": "solamente-cree-production",
+  "name": "solamente-cree-production-fixed",
+  "version": "2.0.0",
   "private": true,
-  "version": "1.0.0",
-  "type": "module",
+  "description": "Sitio web de producción para Centro Evangelístico Solamente Cree, optimizado para Vercel sin dependencias de Google Stitch.",
   "scripts": {
-    "build": "node build.mjs",
-    "preview": "npx serve dist"
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "dev": "node scripts/build.mjs && node scripts/serve.mjs"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }

@@ -1,0 +1,11 @@
+{
+  "name": "Centro Evangelístico Solamente Cree",
+  "short_name": "Solamente Cree",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf8ff",
+  "theme_color": "#0f1c2c",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

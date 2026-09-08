@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.solamentecree.example/sitemap.xml
+Disallow: /api/
+
+Sitemap: https://solamentecree.com/sitemap.xml
