@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://solamentecree.com/sitemap.xml
