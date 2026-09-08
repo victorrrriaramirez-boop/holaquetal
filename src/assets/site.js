@@ -1,0 +1,3 @@
+
+const form=document.querySelector('[data-contact-form]');
+if(form){form.addEventListener('submit',async(e)=>{e.preventDefault();const status=form.querySelector('[data-status]');const data=Object.fromEntries(new FormData(form).entries());status.textContent='Enviando…';try{const r=await fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});const j=await r.json();if(!r.ok) throw new Error(j.error||'No se pudo enviar');status.textContent='Mensaje enviado correctamente.';form.reset()}catch(err){status.textContent=err.message+' Puedes usar también el correo o WhatsApp indicados en esta página.'}})}
